@@ -1,0 +1,1 @@
+(()=>{self.__99416$config={prefix:"/s/",codec:self.__99416$codecs.xor,config:"/__99416.config.js",bundle:"/__99416.bundle.js",worker:"/__99416.worker.js",client:"/__99416.client.js",codecs:"/__99416.codecs.js"};})();
