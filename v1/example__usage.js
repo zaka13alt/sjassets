@@ -35,9 +35,9 @@ __99416.init();
 
 let connection;
 try {
-	connection = new __68256.__68256Connection("/baremux/worker.js", "service-worker");
+	connection = new __68256.__68256Connection("/w.js", "service-worker");
 } catch (e) {
-	connection = new __68256.__68256Connection("/baremux/worker.js");
+	connection = new __68256.__68256Connection("/w.js");
 }
 
 form.addEventListener("submit", async (event) => {
@@ -47,7 +47,7 @@ form.addEventListener("submit", async (event) => {
 	try {
 		await registerSW();
 	} catch (err) {
-		console.warn("Service worker registration skipped:", err);
+		console.warn("error:", err);
 	}
 
 
@@ -60,7 +60,7 @@ form.addEventListener("submit", async (event) => {
 				if (url.includes(".") && !url.includes(" ")) {
 					url = "https://" + url;
 				} else {
-					url = "https://google.com" + encodeURIComponent(url);
+					url = "https://google.com/search?q=" + encodeURIComponent(url);
 				}
 			}
 		}
