@@ -24,9 +24,9 @@ const { __99416Controller } = __99416LoadController();
 const __99416 = new __99416Controller({
     prefix: "/s/",
     files: {
-        wasm: "/172ab3.wasm",
-        all: "/s.js",
-        sync: "/sync.js",
+        wasm: "172ab3.wasm",
+        all: "s.js",
+        sync: "sync.js",
     },
 });
 
