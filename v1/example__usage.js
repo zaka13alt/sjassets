@@ -45,7 +45,7 @@ form.addEventListener("submit", async (event) => {
 
 	
 	try {
-		await registerSW();
+		await  registerh();
 	} catch (err) {
 		console.warn("error:", err);
 	}
