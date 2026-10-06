@@ -35,9 +35,9 @@ __99416.init();
 
 let connection;
 try {
-	connection = new __68256.__68256Connection("/w.js", "service-worker");
+	connection = new __68256.__68256Connection("w.js", "service-worker");
 } catch (e) {
-	connection = new __68256.__68256Connection("/w.js");
+	connection = new __68256.__68256Connection("w.js");
 }
 
 form.addEventListener("submit", async (event) => {
